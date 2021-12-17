@@ -1,0 +1,1 @@
+out < name << "you got promoted" << endl;

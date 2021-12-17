@@ -1,0 +1,1 @@
+{"name":"Local: insertionSort","url":"o:\\MY FILES\\c++\\CPP\\arrays\\sortingInArrays\\insertionSort.cpp","tests":[{"id":1633716251728,"input":"5\n12 3 111 42 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"o:\\MY FILES\\c++\\CPP\\arrays\\sortingInArrays\\insertionSort.cpp","group":"local","local":true}

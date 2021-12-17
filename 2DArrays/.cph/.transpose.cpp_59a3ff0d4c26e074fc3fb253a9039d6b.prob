@@ -1,0 +1,1 @@
+{"name":"Local: transpose","url":"o:\\MY FILES\\c++\\CPP\\2DArrays\\transpose.cpp","tests":[{"id":1634062324573,"input":"3 \n12 13 14\n15 16 17 \n18 19 20","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"o:\\MY FILES\\c++\\CPP\\2DArrays\\transpose.cpp","group":"local","local":true}
