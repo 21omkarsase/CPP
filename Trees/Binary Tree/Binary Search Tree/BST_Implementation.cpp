@@ -224,8 +224,7 @@ public:
         }
     }
 
-    // delete node
-    TreeNode *minValNode(TreeNode *node)
+    TreeNode *minValueNode(TreeNode *node)
     {
         TreeNode *current = node;
         while (current->left != NULL)
@@ -241,10 +240,12 @@ public:
         {
             return NULL;
         }
+
         else if (v < r->value)
         {
             r->left = deleteNode(r->left, v);
         }
+
         else if (v > r->value)
         {
             r->right = deleteNode(r->right, v);
@@ -265,8 +266,8 @@ public:
             }
             else
             {
-                TreeNode *temp = minValNode(r->right);
-                r->value == temp->value;
+                TreeNode *temp = minValueNode(r->right);
+                r->value = temp->value;
                 r->right = deleteNode(r->right, temp->value);
             }
         }
@@ -304,7 +305,6 @@ int main()
             cout << "Enter VALUE of TREE NODE to INSERT in BST: ";
             cin >> val;
             node->value = val;
-            // obj.root = obj.insertRecursive(obj.root, node);
             obj.insertNode(node);
             cout << endl;
             break;
@@ -314,7 +314,6 @@ int main()
             cout << "Enter VALUE of TREE NODE to SEARCH in BST: ";
             cin >> val;
             node = obj.iterativeSearch(val);
-            // node = obj.recursiveSearch(obj.root, val);
             if (node != NULL)
             {
                 cout << "Value found" << endl;
