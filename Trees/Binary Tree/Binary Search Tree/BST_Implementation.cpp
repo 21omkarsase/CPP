@@ -89,6 +89,30 @@ public:
         }
     }
 
+    // insert using recursion
+    TreeNode *insertRecursive(TreeNode *r, TreeNode *new_node)
+    {
+        if (r == NULL)
+        {
+            r = new_node;
+            return r;
+        }
+
+        if (new_node->value < r->value)
+        {
+            r->left = insertRecursive(r->left, new_node);
+        }
+        else if (new_node->value > r->value)
+        {
+            r->right = insertRecursive(r->right, new_node);
+        }
+        else
+        {
+            cout << "No duplicates values allowed" << endl;
+        }
+        return r;
+    }
+
     // printing 2d tree
     void print2D(TreeNode *r, int space)
     {
@@ -300,12 +324,21 @@ int main()
         {
         case 0:
             break;
+            // case 1:
+            //     cout << "INSERT" << endl;
+            //     cout << "Enter VALUE of TREE NODE to INSERT in BST: ";
+            //     cin >> val;
+            //     node->value = val;
+            //     obj.insertNode(obj.root, node);
+            //     cout << endl;
+            //     break;
+
         case 1:
             cout << "INSERT" << endl;
             cout << "Enter VALUE of TREE NODE to INSERT in BST: ";
             cin >> val;
             node->value = val;
-            obj.insertNode(node);
+            obj.root = obj.insertRecursive(obj.root, node);
             cout << endl;
             break;
 
