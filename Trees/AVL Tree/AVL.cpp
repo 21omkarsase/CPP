@@ -156,7 +156,7 @@ public:
         // Right Left Case
         if (bf < -1 && node->value < r->right->value)
         {
-            r->right = leftRotate(r->right);
+            r->right = rightRotate(r->right);
             leftRotate(r);
         }
 
