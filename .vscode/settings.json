@@ -50,7 +50,8 @@
     "xmemory0": "cpp",
     "xstddef": "cpp",
     "xtr1common": "cpp",
-    "xtree": "cpp"
+    "xtree": "cpp",
+    "unordered_set": "cpp"
   },
   "C_Cpp.errorSquiggles": "Disabled"
 }

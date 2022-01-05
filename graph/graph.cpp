@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <vector>
+#include <queue>
 #include <list>
 #include <iterator>
 
@@ -371,6 +372,16 @@ public:
             temp.printEdgeList();
         }
     }
+
+    // BFS Traversal
+    void printBFS()
+    {
+        queue<string> q;
+        q.push(vertices.at(0));
+        while (!q.empty)
+        {
+        }
+    }
 };
 
 int main()
@@ -392,7 +403,9 @@ int main()
         cout << "7. Check if 2 Vertices are Neigbors" << endl;
         cout << "8. Print All Neigbors of a Vertex" << endl;
         cout << "9. Print Graph" << endl;
-        cout << "10. Clear Screen" << endl;
+        cout << "10. BFS Traversal" << endl;
+        cout << "11. DFS Traversal" << endl;
+        cout << "12. Clear Screen" << endl;
         cout << "0. Exit Program" << endl;
 
         cin >> option;
@@ -489,6 +502,16 @@ int main()
 
         case 9:
             g.printGraph();
+            break;
+
+        case 10:
+            break;
+
+        case 11:
+            break;
+
+        case 12:
+            system("cls");
             break;
 
         default:
