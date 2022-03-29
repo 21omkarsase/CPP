@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void selectionSort(int a[], int n) //arrays by deafult passed by address
+void selectionSort(int a[], int n) // arrays by deafult passed by address
 {
 
     for (int i = 0; i < n - 1; i++)
@@ -25,11 +25,27 @@ void selectionSort(int a[], int n) //arrays by deafult passed by address
 
 int main()
 {
-    int a[] = {12, 35, 1, 3, 55, 33, 2};
-    selectionSort(a, 7);
-    for (auto it : a)
+    int n;
+    cout << "Enter the size of the array : " << endl;
+    cin >> n;
+    int arr[n];
+    cout << "Enter the elements of the array : " << endl;
+    for (int i = 0; i < n; i++)
     {
-        cout << it << " ";
+        cin >> arr[i];
+    }
+    cout << endl;
+    cout << "unsorted array : ";
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+    selectionSort(arr, n);
+    cout << "sorted array : ";
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
     }
     return 0;
 }
