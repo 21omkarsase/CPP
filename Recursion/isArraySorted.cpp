@@ -7,12 +7,13 @@ bool sorted(int arr[], int n)
     {
         return true;
     }
-    return arr[1] > arr[0] && arr[n] <= arr[n + 1] && sorted(arr, n - 1);
+    return arr[1] > arr[0] && arr[n - 1] <= arr[n] && sorted(arr, n - 1);
+    cout << n << "n" << endl;
 }
 
 int main()
 {
-    int arr[] = {1, 2, 3, 4, 9, 6};
+    int arr[] = {1, 2, 3, 4, 5, 6};
     int n = sizeof(arr) / sizeof(arr[0]);
     cout << sorted(arr, n) << endl;
     return 0;

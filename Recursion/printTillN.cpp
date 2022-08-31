@@ -3,9 +3,8 @@ using namespace std;
 
 void dec(int n)
 {
-    if (n == 1)
+    if (n == 0)
     {
-        cout << 1 << " ";
         return;
     }
 
@@ -15,9 +14,8 @@ void dec(int n)
 
 void inc(int n)
 {
-    if (n == 1)
+    if (n == 0)
     {
-        cout << n << " ";
         return;
     }
     inc(n - 1);

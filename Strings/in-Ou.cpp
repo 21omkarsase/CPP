@@ -7,15 +7,16 @@ int main()
     // cin >> str;
     // cout << str << endl;
 
-    string str1(5, 'o');
-    cout << str1 << endl;
+    // string str1(5, 'o');
+    // cout << str1 << endl;
 
-    string str2 = "nameomkar";
+    // string str2 = "nameomkar";
 
-    cout << str2 << endl;
+    // cout << str2 << endl;
 
     string s3;
-    getline(cin, s3);
+    // getline(cin, s3);
+    cin >> s3;
     cout << s3 << endl;
     return 0;
 }

@@ -4,7 +4,8 @@ using namespace std;
 
 int main()
 {
-    set<int> st = {11, 12, 13, 14, 15};
+    set<int> st = {11, 12, 16, 14, 15};
+    // set<int> st = {94, 22, 33, 1222, 34};
     // int n;
     // cin >> n;
     // for (int i = 0; i < n; i++)
@@ -13,6 +14,12 @@ int main()
     //     cin >> x;
     //     st.insert(x); //time complexity for insertion in O(logn)
     // }
+    cout << *st.lower_bound(12) << " 12 " << endl;
+    cout << *st.lower_bound(13) << " 13 " << endl;
+    cout << *st.upper_bound(12) << " 12 " << endl;
+    cout << *st.upper_bound(10006) << " 13 " << endl;
+    cout << *st.upper_bound(10020) << " 13 " << endl;
+    cout << *st.upper_bound(10000) << " 13 " << endl;
     for (auto it = st.rbegin(); it != st.rend(); it++)
     {
         cout << *it << " ";
@@ -36,10 +43,10 @@ int main()
     {
         cout << it << "asdfd ";
     }
-    st.erase(15); //erases value 15
+    st.erase(15); // erases value 15
     cout << endl;
 
-    //unoredered list
+    // unoredered list
 
     unordered_set<int> s;
 

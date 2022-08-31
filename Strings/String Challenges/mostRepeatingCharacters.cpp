@@ -4,7 +4,9 @@ using namespace std;
 
 int main()
 {
-    string s = "asdfkjkffff";
+    cout << 3 + 'a' << endl;
+    // cout << 'a' + 1 << endl;
+    string s = "alkkddssslsdfkjkffff";
 
     int freq[26];
     for (int i = 0; i < 26; i++)
@@ -23,8 +25,10 @@ int main()
         {
             maxF = freq[i];
             ans = i + 'a';
+            cout << ans << " ";
         }
     }
+    cout << endl;
     cout << maxF << " " << ans << endl;
     return 0;
 }

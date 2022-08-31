@@ -3,9 +3,9 @@ using namespace std;
 
 int power(int n, int p)
 {
-    if (p == 0)
+    if (p == 1)
     {
-        return 1;
+        return n;
     }
 
     return power(n, p - 1) * n;
@@ -13,6 +13,6 @@ int power(int n, int p)
 
 int main()
 {
-    cout << power(5, 3) << endl;
+    cout << power(2, 10) << endl;
     return 0;
 }
