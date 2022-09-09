@@ -1,5 +1,4 @@
 #include <iostream>
-#include <charconv>
 #include <array>
 using namespace std;
 // inside main func max int array size 10^6 bool array max size 10^7
