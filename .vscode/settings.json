@@ -31,6 +31,11 @@
   ],
   "files.associations": {
     "iostream": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "cstring": "cpp",
+    "typeindex": "cpp",
+    "typeinfo": "cpp",
+    "bitset": "cpp",
+    "new": "cpp"
   }
 }

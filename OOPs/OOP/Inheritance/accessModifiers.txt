@@ -1,0 +1,31 @@
+(1) Derived mode public
+   Data Members Property
+   (i)   : public  (yes)
+           all the public vars of parent will act as public var of child class
+   (ii)  : private   (no)
+           we can not access private members of parent class
+   (iii) : protected (yes)
+          all the protected vars of parent will act as protected var of child class
+
+(2) Derived mode private
+   Data Members Property
+   (i)   : public   (yes)
+           all public var will act as private in child class
+   (ii)  : private  (no)
+           we can not access private members of parent class
+   (iii) : protected  (yes)
+           all protected vars will act as private in child class
+
+
+
+(3) Derived mode protected
+   Data Members Property
+   (i)   : public  (yes)
+           all public var will act as protected in child class
+   (ii)  : private  (no)
+           we can not access private members of parent class
+   (iii) : protected (yes)
+           we can not access private members of parent class
+
+
+
