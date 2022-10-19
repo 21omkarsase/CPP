@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "e:/My Folder/Lang/CPP/CPP/OOPs/OOP/Inheritance",
-      "program": "e:/My Folder/Lang/CPP/CPP/OOPs/OOP/Inheritance/build/Debug/outDebug",
+      "cwd": "e:/My Folder/Lang/CPP/CPP/cpp",
+      "program": "e:/My Folder/Lang/CPP/CPP/cpp/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
